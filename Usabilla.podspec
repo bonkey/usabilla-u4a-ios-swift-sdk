@@ -10,5 +10,9 @@ Pod::Spec.new do |s|
   s.platform      = :ios, "9.0"
   s.source        = { :http => "https://github.com/usabilla/usabilla-u4a-ios-swift-sdk/releases/download/v#{s.version}/Pods.framework.zip"}
   s.ios.vendored_frameworks = 'Usabilla.framework'
-
+  s.pod_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
+    'ENABLE_BITCODE' => 'NO'
+  }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
