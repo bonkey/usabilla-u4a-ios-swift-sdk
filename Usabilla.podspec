@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name          = "Usabilla"
-  s.version       = "6.6.0-Xcode-11.5"
+  s.version       = "6.6.1-Xcode-11.7"
   s.summary       = "Collect feedback from your users."
   s.description   = 'With Usabilla FeedbackSDK you can collect feedback from your users.'
   s.homepage      = "http://usabilla.com"
